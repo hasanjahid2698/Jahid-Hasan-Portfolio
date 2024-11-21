@@ -11859,14 +11859,14 @@ div#featured-project-carousel {
   }
 }
 .rn-nav-list .nav-item {
-  flex-basis: 25%;
+  flex-basis: 33.33%;
   text-align: center;
   margin-top: 0;
   margin-bottom: 0;
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
   .rn-nav-list .nav-item {
-    flex-basis: 25%;
+    flex-basis: 33.33%;
   }
 }
 @media only screen and (max-width: 767px) {
@@ -13388,21 +13388,26 @@ span.sr-only {
     font-size: 16px;
   }
 }
-.rn-pricing .pricing-body .check-wrapper {
+.rn-pricing .pricing-body .check-wrapper,
+.resume-single-list .check-wrapper {
   justify-content: space-between;
   display: flex;
 }
-.rn-pricing .pricing-body .check-wrapper .left-area {
+.rn-pricing .pricing-body .check-wrapper .left-area,
+.resume-single-list .check-wrapper .left-area {
   margin-bottom: 30px;
 }
-.rn-pricing .pricing-body .check-wrapper .check {
+.rn-pricing .pricing-body .check-wrapper .check,
+.resume-single-list .check-wrapper .check {
   margin-bottom: 15px;
 }
-.rn-pricing .pricing-body .check-wrapper .check svg {
+.rn-pricing .pricing-body .check-wrapper .check svg,
+.resume-single-list .check-wrapper .check svg {
   margin-top: 2px;
   color: var(--color-lightn);
 }
-.rn-pricing .pricing-body .check-wrapper .check p {
+.rn-pricing .pricing-body .check-wrapper .check p,
+.resume-single-list .check-wrapper .check p {
   margin-left: 5px;
   color: var(--color-lightn);
   font-weight: 400;
@@ -13410,27 +13415,32 @@ span.sr-only {
   font-family: var(--font-secondary);
 }
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
-  .rn-pricing .pricing-body .check-wrapper .check p {
+  .rn-pricing .pricing-body .check-wrapper .check p,
+  .resume-single-list .check-wrapper .check p {
     font-size: 16px;
   }
 }
 @media only screen and (min-width: 768px) and (max-width: 991px) {
-  .rn-pricing .pricing-body .check-wrapper .check p {
+  .rn-pricing .pricing-body .check-wrapper .check p,
+  .resume-single-list .check-wrapper .check p {
     font-size: 16px;
   }
 }
 @media only screen and (max-width: 767px) {
-  .rn-pricing .pricing-body .check-wrapper .check p {
+  .rn-pricing .pricing-body .check-wrapper .check p,
+  .resume-single-list .check-wrapper .check p {
     font-size: 14px;
   }
 }
 @media only screen and (max-width: 575px) {
-  .rn-pricing .pricing-body .check-wrapper .check p {
+  .rn-pricing .pricing-body .check-wrapper .check p,
+  .resume-single-list .check-wrapper .check p {
     font-size: 13px;
   }
 }
 @media only screen and (max-width: 479px) {
-  .rn-pricing .pricing-body .check-wrapper {
+  .rn-pricing .pricing-body .check-wrapper,
+  .resume-single-list .check-wrapper {
     display: block;
   }
 }
@@ -16563,7 +16573,8 @@ body.white-version .rn-btn-ulderline {
 .white-version .rn-resume-area .personal-experience-inner .experience-list .resume-single-list .heading {
   border-bottom: 1px solid #e3e9ed;
 }
-.white-version .rn-resume-area .personal-experience-inner .experience-list .resume-single-list .heading .title h4 {
+.white-version .rn-resume-area .personal-experience-inner .experience-list .resume-single-list .heading .title h4,
+.white-version .rn-resume-area .personal-experience-inner .experience-list .resume-single-list .heading .title h6{
   color: var(--color-heading-wv);
 }
 .white-version .rn-resume-area .personal-experience-inner .experience-list .resume-single-list .heading .title span {
@@ -16576,7 +16587,8 @@ body.white-version .rn-btn-ulderline {
 .white-version .rn-resume-area .personal-experience-inner .experience-list .resume-single-list:hover .heading {
   border-bottom: 1px solid rgb(206, 110, 110);
 }
-.white-version .rn-resume-area .personal-experience-inner .experience-list .resume-single-list:hover .heading .title h4 {
+.white-version .rn-resume-area .personal-experience-inner .experience-list .resume-single-list:hover .heading .title h4,
+.white-version .rn-resume-area .personal-experience-inner .experience-list .resume-single-list:hover .heading .title h6 {
   color: var(--color-white);
 }
 .white-version .rn-resume-area .personal-experience-inner .experience-list .resume-single-list:hover .heading .title span {
@@ -16593,6 +16605,10 @@ body.white-version .rn-btn-ulderline {
 .white-version .rn-resume-area .personal-experience-inner .experience-list .resume-single-list:hover .inner p {
   color: var(--color-white);
 }
+.white-version .rn-resume-area .personal-experience-inner .experience-list .resume-single-list:hover .inner svg {
+  color: var(--color-white);
+}
+
 .white-version .rn-resume-area .progress-charts .progress {
   background: #dce1e4;
   box-shadow: none;
@@ -16774,10 +16790,12 @@ body.white-version .rn-btn-ulderline {
 .white-version .rn-pricing-area .rn-pricing .pricing-body p.description {
   color: var(--color-body-white);
 }
-.white-version .rn-pricing-area .rn-pricing .pricing-body .check-wrapper .check p {
+.white-version .rn-pricing-area .rn-pricing .pricing-body .check-wrapper .check p,
+.resume-single-list .check-wrapper .check p {
   color: var(--color-body-white);
 }
-.white-version .rn-pricing-area .rn-pricing .pricing-body .check-wrapper .check svg {
+.white-version .rn-pricing-area .rn-pricing .pricing-body .check-wrapper .check svg,
+.resume-single-list .check-wrapper .check svg{
   color: var(--color-primary);
 }
 .white-version .rn-pricing-area .rn-pricing .pricing-footer .rn-btn {
@@ -17215,3 +17233,9 @@ body.white-version .rn-btn-ulderline {
 .white-version .slider-style-6 .cd-headline span {
   color: var(--color-white) !important;
 }/*# sourceMappingURL=style.css.map */
+
+.cls-1 {
+  fill: none;
+  stroke-miterlimit: 10;
+  stroke-width: 1.92px;
+}
