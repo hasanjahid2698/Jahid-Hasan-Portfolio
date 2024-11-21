@@ -11416,7 +11416,6 @@ figcaption {
 .rn-service .inner .icon svg {
   width: 50px;
   height: auto;
-  color: var(--color-primary);
   stroke-width: 1 !important;
 }
 .rn-service .inner .content .title {
