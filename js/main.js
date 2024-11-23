@@ -62,29 +62,30 @@
 				_self.closest('div').find('input,textarea').removeAttr('style');
 				_self.find('.error-msg').remove();
 				_self.closest('div').find('button[type="submit"]').attr('disabled', 'disabled');
-				var data = $(this).serialize();
-				$.ajax({
-					url: 'mail.php',
-					type: "post",
-					dataType: 'json',
-					data: data,
-					success: function (data) {
-						_self.closest('div').find('button[type="submit"]').removeAttr('disabled');
-						if (data.code == false) {
-							_self.closest('div').find('[name="' + data.field + '"]');
-							_self.find('.rn-btn').after('<div class="error-msg"><p>*' + data.err + '</p></div>');
-						} else {
-							$('.error-msg').hide();
-							$('.form-group').removeClass('focused');
-							_self.find('.rn-btn').after('<div class="success-msg"><p>' + data.success + '</p></div>');
-							_self.closest('div').find('input,textarea').val('');
+				var templateParams = {
+                    toemail: "hasanjahidportfolio@gmail.com",
+                    fromemail:  $('#contact-email').val(),
+                    subject: $('#subject').val(),
+                    sendername: $('#contact-name').val(),
+                    phonenumber: $('#contact-phone').val(),
+                    message: $('#contact-message').val()
+                  };
+                emailjs.init('bj7mQG9j8EKOcNRKx'); 
+                emailjs.send('service_xmelk6w', 'template_5cpb4mp',templateParams)
+                    .then(function () {
+                        alert("Message sent successfully!");
+                        $('.error-msg').hide();
+                        $('.form-group').removeClass('focused');
+                        _self.find('.rn-btn').after('<div class="success-msg"><p>Message sent successfully!</p></div>');
+                        _self.closest('div').find('input,textarea').val('');
 
-							setTimeout(function () {
-								$('.success-msg').fadeOut('slow');
-							}, 5000);
-						}
-					}
-				});
+                        setTimeout(function () {
+                            $('.success-msg').fadeOut('slow');
+                        }, 5000);
+                    }, function (error) {
+                        _self.closest('div').find('[name="' + data.field + '"]');
+					    _self.find('.rn-btn').after('<div class="error-msg"><p>*' + error.text + '</p></div>');
+                    });
 			});
         },
 
