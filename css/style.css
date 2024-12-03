@@ -10400,7 +10400,7 @@ figcaption {
   box-shadow: var(--shadow-1);
 }
 .slide .skill-share-inner .skill-share li img {
-  max-height: 23px;
+  max-height: 35px;
   width: auto;
 }
 .slide .thumbnail {
