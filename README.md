@@ -19,7 +19,7 @@ Welcome to my personal portfolio website! This project is built using **HTML** a
 
 1. Clone the repository:
 ```
-   git clone https://github.com/yourusername/yourrepository.git
+   git clone https://github.com/hasanjahid2698/Jahid-Hasan-Portfolio
 ```
 2. Open the index.html file in a browser to explore locally.
 3. Please customize the content in HTML, CSS, and JS files as needed.
