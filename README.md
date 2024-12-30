@@ -56,10 +56,6 @@ Welcome to my personal portfolio website! This project is built using **HTML** a
 
 ---
 
-## 📝 License
-This project is open-source and available under the MIT License. You can use and adapt it for your portfolio. Please star this repository if you like it.
-
----
 
 
 
